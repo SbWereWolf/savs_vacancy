@@ -1,0 +1,16 @@
+﻿<Window x:Class="Menu.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Menu"
+        mc:Ignorable="d"
+        Title="Volkhin Nikolay solution of test task" Height="350" Width="525" Closing="Window_Closing">
+    <Grid>
+        <StackPanel Margin="10,10,10.4,9.8">
+            <Button x:Name="ShowAlienLanguageButton" Content="Открыть форму &quot;Язык чужих&quot;" Click="ShowAlienLanguageButton_Click"/>
+            <Button x:Name="ShowDuckMigrationButton" Content="Открыть форму &quot;Миграфия уток&quot;" Click="ShowDuckMigrationButton_Click" />
+        </StackPanel>
+
+    </Grid>
+</Window>

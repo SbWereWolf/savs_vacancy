@@ -1,0 +1,18 @@
+﻿<Window x:Class="DuckMigrationGui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DuckMigrationGui"
+        mc:Ignorable="d"
+        Title="Задача &quot;Миграция уток&quot;" Height="350" Width="525" Closing="Window_Closing">
+    <Grid>
+        <DockPanel LastChildFill="False" Margin="0">
+            <Label x:Name="RoadMapLabel" Content="Карта дорог между озёрами" Height="26" DockPanel.Dock="Top" Margin="0,0,0.4,0" VerticalContentAlignment="Center"/>
+            <TextBox x:Name="RoadMapTextBox" TextWrapping="Wrap" DockPanel.Dock="Top" Height="116" Margin="10,0,10.4,0" AcceptsTab="True" AcceptsReturn="True"/>
+            <Button x:Name="CalculatePathMapButton" Content="Вычислить карту троп" Height="30" DockPanel.Dock="Top" Margin="10,0,10.4,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="CalculatePathMapButton_Click"/>
+            <Label x:Name="PathMapLabel" Content="Рассчитанная карта троп" Height="32" DockPanel.Dock="Top" Margin="0,0,0.4,0"/>
+            <TextBox x:Name="PathMapTextBox" Height="17" TextWrapping="Wrap" VerticalAlignment="Top" DockPanel.Dock="Top" Margin="10,0,10.4,0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"/>
+        </DockPanel>
+    </Grid>
+</Window>
